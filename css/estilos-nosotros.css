@@ -1,0 +1,66 @@
+:root {
+    /* variables para tipografias */
+    --rosado-font: #E25D79;
+    --blanco-font: #E8E8E8;
+    --azulOscuro-font: #17202D;
+  
+    /* Variables para el background */
+    --fondo-rosado: #E25D79;
+    --fondo-oscuro: #17202D;
+    --fondo-blanco: #E8E8E8;
+
+    /* Variables para botones*/
+    --btn-rosado: #E25D79;
+    --btn-blanco: #E8E8E8;
+    --btn-degradado: linear-gradient(106.57deg, #D4355B 0%, #733570 100%);
+
+    /* variables para iconos */
+
+    --icon-rosado: #E25D79;
+    --icon-blanco: #E8E8E8;
+  }
+
+  .cuerpo {
+      border: solid 1px red;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      height: 700px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 20px;
+  }
+
+  [class^=img] {
+      border: solid 1px yellow;
+  }
+
+  .cuerpo h2 {
+      grid-column: 3 / 7;
+      grid-row: 1 / 2;
+  }
+
+  .cuerpo .img1 {
+      grid-column: 3 / 8;
+      grid-row: 2 / 5;
+  }
+
+.cuerpo .img2 {
+    grid-column: 8 / 11;
+    grid-row: 2 / 5;
+}
+
+.cuerpo .mision {
+    grid-column: 3 / 8;
+    grid-row: 5 / 7;
+}
+
+.cuerpo .vision {
+    grid-column: 8 / 11;
+    grid-row: 5 / 7;
+}
+
+
+
