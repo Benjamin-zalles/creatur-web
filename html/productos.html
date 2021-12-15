@@ -16,19 +16,29 @@
       src="https://kit.fontawesome.com/b1a91cbac7.js"
       crossorigin="anonymous"
     ></script>
+    <!-- incono del encabezado -->
+    <link rel="icon" type="imagen/jpg" href="../img/logo-creatur.svg" />
+    <!-- cierre encabezado -->
     
   </head>
 
   <body>
+
+
     <header>
       <div class="icon__menu" id="btn-open">
         <i class="bx bx-menu"></i>
       </div>
 
       <div class="menu-header">
-        <a href="#" class="carrito">
-          <i class="bx bx-cart"></i>
-        </a>
+        <!--Boton-->
+        <div class="boton-modal">
+          <label for="btn-modal">
+            <i class="bx bx-cart"></i>
+          </label>
+      </div>
+      <!--Fin de Boton-->
+      
 
         <a
           href="https://www.instagram.com/?hl=es"
@@ -49,10 +59,63 @@
         <a href="#">Iniciar Sesión</a>
         <a href="#">Registrarse</a>
       </div>
+
+       <!--Ventana Modal-->
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            
+        <h1 class="text-center">MI CARRITO</h1>
+        
+        <div class="row-item">
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Producto</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6 class="text">Precio</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Cantidad</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- ? EMPEZAR A COMPRAR ARTÍCULOS DEL CARRITO -->
+        <div class="shopping-cart-items shoppingCartItemsContainer"></div>
+         <!-- ? FINALIZAR ARTÍCULOS DEL CARRITO DE COMPRA -->
+
+            <!--  INICIO TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total">
+                      <div class="total">
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <p class="mb-0">TOTAL</p>
+                    </div>
+                
+                        
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN TOTAL -->
+
+
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+<!--Fin de Ventana Modal-->
+
     </header>
 
-    <!-- Inicio de side menu -->
 
+
+    <!-- Inicio de side menu -->
     <div class="menu__side" id="menu_side">
       <div class="logo-creatur">
         <a href="#">
@@ -112,7 +175,9 @@
 
     <!-- Fin de side menu -->
 
-    <!-- Inicio filtro de clasificación de productos -->
+
+
+    <!-- !Inicio filtro de clasificación de productos -->
 
     <div class="title">
       <h1>Eliga su Producto</h1>
@@ -120,7 +185,7 @@
 
     <div class="content">
       <div class="cuerpo">
-        <input type="radio" id="All" name="categories" value="All" checked />
+        <input type="radio" id="todos" name="categories" value="todos" checked />
         <input
           type="radio"
           id="descuentos"
@@ -145,342 +210,647 @@
             <label for="descuentos">Descuentos</label>
           </li>
           <li>
-            <label for="All">Todos</label>
+            <label for="todos">Todos</label>
           </li>
         </ol>
 
+        <!-- !Inicio filtro de clasificación de productos -->
+
+
+        
+
         <!-- Inicio cards compras -->
+        <div class="items">
+            
+            <div class="item shadow mb-4" data-category="gratis">
+              <img class="item-image" src="../img/img-productos/image 386.jpg" />
+              <h3 class="item-title">ÁRBOLES OTOÑALES</h3>
 
-        <div class="cards">
-          <!-- card 1-->
-          <div class="card" data-category="modelo">
-            <a href="paginas-productos/arbolesOtoño.html">
-              <img src="../img/img-productos/image 386.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>ÁRBOLES OTOÑALES</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
+              <div class="item-details">
+                <h4 class="item-price">9.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="item shadow mb-4" data-category="gratis">
+              <img class="item-image" src="../img/img-productos/image 387.jpg" />
+              <h3 class="item-title">CONTENEDOR</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">0.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>GRATIS</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+        
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 388.jpg" />
+              <h3 class="item-title"> CASA EN EL CAMPO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">5.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+       
+            <div class="item shadow mb-4" data-category="gratis">
+              <img class="item-image" src="../img/img-productos/image 410.jpg" />
+              <h3 class="item-title">ÁRBOL DE OTOÑO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">0.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>GRATIS</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+      
+
+       
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 390.jpg" />
+              <h3 class="item-title">PACKAGING</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">30.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+         
+       
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 391.jpg" />
+              <h3 class="item-title">VOLCÁN</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">3.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="item shadow mb-4" data-category="descuentos">
+              <img class="item-image" src="../img/img-productos/image 392.jpg" />
+              <h3 class="item-title">PERSONAJE DE TRAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">6.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>76% Dto $6.00USD</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+     
+         
+            <div class="item shadow mb-4" data-category="descuentos">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">POLLITO REVELDE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">5.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>76% Dto $5.00USD</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+       
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">PERSONAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">4.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="item shadow mb-4" data-category="mockups">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">LATA DE SODA</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">2.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+        
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">CUARTO GAMER</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO 
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+       
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">GUERRERO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">7.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+      
+            <div class="item shadow mb-4" data-category="mockups">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">MOCKUP</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item shadow mb-4" data-category="descuentos">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">LAGARTO DEL PANTANO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">ISLA CALAVERA</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item shadow mb-4" data-category="descuentos">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">HOUSE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">PERSONAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">PERSONAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">PERSONAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item shadow mb-4" data-category="otros">
+              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+              <h3 class="item-title">PERSONAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            
+        
+
+
+
+
+          <!-- <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Pokemon Verde</h3>
+
+              <img class="item-image" src="./img/pokemon-verde.jpg" />
+
+              <div class="item-details">
+                <h4 class="item-price">9.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Pokemon Plata</h3>
 
-          <!-- card 2 -->
-          <div class="card" data-category="gratis">
-            <a href="../html/paginas-productos/contenedor.html">
-              <img src="../img/img-productos/image 387.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>CONTENEDOR</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>Gratis</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
+              <img class="item-image" src="./img/pokemon-plata.jpg" />
+
+              <div class="item-details">
+                <h4 class="item-price">19.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Pokemon Oro</h3>
 
-          <!-- card 3 -->
-          <div class="card" data-category="modelo">
-            <a href="../html/paginas-productos/casaCampo.html">
-              <img src="../img/img-productos/image 388.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>CASA EN EL CAMPO</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
+              <img class="item-image" src="./img/pokemon-oro.jpg" />
+              <div class="item-details">
+                <h4 class="item-price">19.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Sonic</h3>
 
-          <!-- card 4 -->
-          <div class="card" data-category="modelo">
-            <a href="../html/paginas-productos/arbolOtoño.html">
-              <img src="../img/img-productos/image 410.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>ÁRBOL DE OTOÑO</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
+              <img class="item-image" src="./img/sonic.jpg" />
+              <div class="item-details">
+                <h4 class="item-price">6.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
               </div>
             </div>
-          </div>
-
-          <!-- card 5 -->
-          <div class="card" data-category="mockups">
-            <a href="../html/paginas-productos/packaging.html">
-              <img src="../img/img-productos/image 390.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>PACKAGING</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 6 -->
-          <div class="card" data-category="modelo">
-            <a href="../html/paginas-productos/volcan.html">
-              <img src="../img/img-productos/image 391.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>VOLCÁN</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 7 -->
-          <div class="card" data-category="descuentos">
-            <a href="../html/paginas-productos/personajeTraje.html">
-              <img src="../img/img-productos/image 392.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>PERSONAJE DE TRAJE</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>76% Dto $44</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 8 -->
-          <div class="card" data-category="gratis">
-            <a href="../html/paginas-productos/personaje.html">
-              <img src="../img/img-productos/image 393.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>PERSONAJE</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>Gratis</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 9-->
-          <div class="card" data-category="mockups">
-            <a href="../html/paginas-productos/lata.html">
-              <img src="../img/img-productos/image 396.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>LATA DE SODA</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 10  -->
-          <div class="card" data-category="modelo">
-            <a href="../html/paginas-productos/cuartoGamer.html">
-              <img src="../img/img-productos/image 399.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>CUARTO GAMER</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 11 -->
-          <div class="card" data-category="modelo">
-            <a href="../html/paginas-productos/guerrero.html">
-              <img src="../img/img-productos/image 414.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>GUERRERO</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 12 -->
-          <div class="card" data-category="mockups">
-            <a href="../html/paginas-productos/mockup.html">
-              <img src="../img/img-productos/image 397.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>MOCKUP</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>30 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 13 -->
-          <div class="card" data-category="gratis">
-            <a href="../html/paginas-productos/pollito.html">
-              <img src="../img/img-productos/image 400.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>POLLITO REVELDE</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>Gratis</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 14 -->
-          <div class="card" data-category="descuentos">
-            <a href="../html/paginas-productos/lagarto.html">
-              <img src="../img/img-productos/image 402.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>LAGARTO DEL PANTANO</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>76% Dto $44</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 15 -->
-          <div class="card" data-category="modelo">
-            <a href="../html/paginas-productos/calavera.html">
-              <img src="../img/img-productos/image 404.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>ISLA CALAVERA</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>60 Bs</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 16 -->
-          <div class="card" data-category="descuentos">
-            <a href="../html/paginas-productos/house.html">
-              <img src="../img/img-productos/image 413.jpg" />
-            </a>
-            <div class="card-cuerpo">
-              <h3>HOUSE</h3>
-              <button type="button" class="btn-animado">
-                <i class="fas fa-shopping-cart"></i>
-                <span>76% Dto $44</span>
-              </button>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
+      
+    <!-- END SECTION STORE -->
+
+
+
+
+    <!-- START SECTION SHOPPING CART -->
+    <!-- <section class="shopping-cart">
+      <div class="container">
+        <h1 class="text-center">MI CARRITO</h1>
+        
+        <div class="row-item">
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Producto</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6 class="text-truncate">Precio</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Cantidad</h6>
+            </div>
+          </div>
+        </div> -->
+        <!-- ? START SHOPPING CART ITEMS -->
+        <div class="shopping-cart-items shoppingCartItemsContainer"></div>
+
+        <!-- MOCKUP EXAMPLE (DELETE) -->
+        <!-- <div class="shoppingCartItem">
+            <div class="flex">
+                <div class="shopping-cart-item">
+                    <img src='./img/sonic.jpg' class="shopping-cart-image">
+                    
+                </div>
+            </div>
+            <div class="flex">
+                <div class="shopping-cart-item">
+                    <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Sonic
+                    </h6>
+                </div>
+            </div>
+
+
+            <div class="flex">
+                <div class="shopping-cart-price">
+                    <p class="item-price mb-0 shoppingCartItemPrice">6.99€</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div
+                    class="shopping-cart-quantity">
+                    <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                        value="1">
+                    <button class="btn btn-danger buttonDelete" type="button"><i class='bx bxs-trash'></i></button>
+                </div>
+            </div>
+        </div> -->
+        <!-- END MOCKUP EXAMPLE -->
+        <!-- ? END SHOPPING CART ITEMS -->
+
+
+        
+        <!-- START TOTAL -->
+        <!-- <div class="row-TOTAL">
+          <div class="col-12">
+            <div class="shopping-cart-total d-flex align-items-center">
+                <div class="total">
+                   
+                    <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                    <p class="mb-0">TOTAL</p>
+                </div>
+            
+              <div
+                class="toast ml-auto bg-info"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="2000"
+              >
+                <div class="toast-header">
+                  <span>🙋</span>
+                  <strong class="mr-auto ml-1 text-secondary"
+                    >Elemento en el carrito</strong
+                  >
+                  <button
+                    type="button"
+                    class="ml-2 mb-1 close"
+                    data-dismiss="toast"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="toast-body text-white">
+                  Se aumentó correctamente la cantidad
+                </div>
+              </div>
+              <button
+                class="btn btn-success ml-auto comprarButton"
+                type="button"
+                data-toggle="modal"
+                data-target="#comprarModal">
+                COMPRAR
+              </button>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- END TOTAL -->
+
+        <!-- START MODAL COMPRA -->
+        <!--    <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- END MODAL COMPRA -->
+
+       
+
+
+
+
+
+    
       </div>
     </div>
+    
+
+
+
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- END SECTION SHOPPING CART -->
 
     <!-- Fin cards compras -->
 
     <footer class="footer">creatur</footer>
 
     <script src="../js/menu.js"></script>
+    <script src="../js/tienda.js"></script>
   </body>
 </html>
