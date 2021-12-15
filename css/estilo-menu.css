@@ -266,12 +266,50 @@ header {
 }
 
 
-/* .footer {
+.footer {
+    margin-top: 200px;
     width: 100%;
-    height: 100px;
-    background: black;
+    /* height: 100px; */
+    background: #131b25;
     color: white;
-    position: sticky;
-    bottom: 0;
- } */
+ }
+
+ .enlaces-footer {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* grid-template-rows: 100px; */
+  gap: 20px;
+  justify-content: center;
+    
+}
+
+.enlaces-footer h2{
+  font-size: 20px;
+}
+
+ .secciones ul {
+   font-size: 12px;
+ }
+
+.informacion{
+  width: 200px;
+}
+ .informacion ul {
+  font-size: 12px;
+}
+
+.informacion a{
+  text-decoration: none;
+  color: var(--blanco-font);
+}
+
+
+.iconos-link i{
+  font-size: 30px;
+  color: var(--icon-rosado);
+}
+
 
