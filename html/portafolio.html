@@ -11,6 +11,8 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link rel='stylesheet' href='https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css'>
    
   </head>
 
@@ -108,9 +110,12 @@
 
     <!-- Fin de side menu -->
 
+
+
+
     <div class="cuerpo">
       <div class="portafolio">
-        <h2>Portafolio</h2>
+        <h2 data-text="Portafolio...">Portafolio...</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
           deleniti in optio fugit ut neque temporibus amet consequuntur
@@ -118,28 +123,69 @@
         </p>
 
         <div class="movie">
-          <!-- <video src="video/1 comprimido.mp4"></video> -->
+            <img src="../img/img-portafolio/Isla.png" alt="img">
         </div>
       </div>
 
       <hr />
 
       <div class="title-trabajos">
-        <h2><span>Trabajos</span> Realizados</h2>
+        <h3><span>Trabajos</span> Realizados</h3>
       </div>
 
       <div class="trabajos">
-        <div class="galery galery1"></div>
-        <div class="galery galery2"></div>
-        <div class="galery galery3"></div>
-        <div class="galery galery4"></div>
-        <div class="galery galery5"></div>
-        <div class="galery galery6"></div>
+        
+
+         
+<!-- partial:index.partial.html -->
+<div class="trip-detail-gallery dragscroll" id="lightgallery">
+
+
+  <div class="gallery_item1" data-src="../img-login/casa2.jpg">
+      <img src="../img-login/casa2.jpg">
+  </div>
+  <div class="gallery_item2" data-src="../img-login/casa2.jpg">
+      <img src="../img-login/casa2.jpg">
+  </div>
+  <div class="gallery_item3" data-src="../img-login/casa2.jpg">
+      <img src="../img-login/casa2.jpg">
+  </div>
+  <div class="gallery_item4" data-src="../img-login/casa2.jpg">
+      <img src="../img-login/casa2.jpg">
+  </div>
+  <div class="gallery_item5" data-src="../img-login/casa2.jpg">
+      <img src="../img-login/casa2.jpg">
+  </div>
+
+  <div class="gallery_item6" data-src="../img-login/casa2.jpg">
+    <img src="../img-login/casa2.jpg">
+</div>
+
+<div class="gallery_item7" data-src="../img-login/casa2.jpg">
+  <img src="../img-login/casa2.jpg">
+</div>
+
+<div class="gallery_item8" data-src="../img-login/casa2.jpg">
+  <img src="../img-login/casa2.jpg">
+</div>
+
+
+</div>
+<!-- partial -->
+
+
       </div>
     </div>
 
     <footer class="footer">creatur</footer>
 
     <script src="../js/menu.js"></script>
+
+    <script src='https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js'></script><script  src="../js/porfafolio.js"></script>
+    
   </body>
 </html>
+

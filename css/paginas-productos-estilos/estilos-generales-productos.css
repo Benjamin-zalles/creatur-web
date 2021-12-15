@@ -88,7 +88,7 @@
 
   .img4 img {
     width: 100%;
-    object-fit: none;
+    object-fit: cover;
   }
 
   .cuerpo .comentarios { 

@@ -19,11 +19,56 @@
     <!-- incono del encabezado -->
     <link rel="icon" type="imagen/jpg" href="../img/logo-creatur.svg" />
     <!-- cierre encabezado -->
+
+    <script src="https://kit.fontawesome.com/b1a91cbac7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/iniciar-sesion.css">
     
   </head>
 
   <body>
 
+    <!-- INICIO DE SESIÓN -->
+
+    <div class="padre" id="padre">
+        <div class="login-container" id="overlay">
+           
+            <div class="login-info-container" id="popup">
+                <h1 class="title"> iniciar sesión</h1>
+                
+                <div class="social-login">
+                    
+                    <div class="social-login-element">
+                        <img src="../img-login/google.svg" alt="google-jpg">
+                        <spam>google</spam>
+                    </div>
+                    
+                    <div class="social-login-element">
+                        <img src="../img-login/facebook.svg" alt="facebook-jpg">
+                        <spam>facebook</spam>
+                    </div>
+                
+                </div>
+              
+                
+                <form class="inputs-container">
+                    <input class= "input" type="text" placeholder="Username">
+                    <input class= "input" type="password" placeholder="Password">
+                    <p>¿Olvidó su contraseña? <span class="span"> clip aquí</span></p>
+                    <button class="btn-s">iniciar sesión</button>
+                    <p>¿No tienes una cuenta? <span class="span">registrarse</span></p>
+                </form>
+                
+            </div>
+            <div class="popup-img" id="popup-img">
+                <img class="image-container" src="../img-login/casa2.jpg" alt="login">
+                <a href="#" class="btn-cerrar-popup" id="btn-cerrar-popup">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACABA INICIO DE SESIÓN -->
 
     <header>
       <div class="icon__menu" id="btn-open">
@@ -56,7 +101,7 @@
           <i class="bx bxl-facebook-circle"></i>
         </a>
 
-        <a href="#">Iniciar Sesión</a>
+        <a href="#" id="user-icon-open">Iniciar Sesión</a>
         <a href="#">Registrarse</a>
       </div>
 
@@ -179,7 +224,7 @@
 
     <!-- !Inicio filtro de clasificación de productos -->
 
-    <div class="title">
+    <div class="title-productos">
       <h1>Eliga su Producto</h1>
     </div>
 
@@ -223,7 +268,9 @@
         <div class="items">
             
             <div class="item shadow mb-4" data-category="gratis">
-              <img class="item-image" src="../img/img-productos/image 386.jpg" />
+              <a href="paginas-productos/arbolesOtoño.html">
+                  <img class="item-image" src="../img/img-productos/1.arboles/arboles-1.png" />
+              </a>
               <h3 class="item-title">ÁRBOLES OTOÑALES</h3>
 
               <div class="item-details">
@@ -243,7 +290,9 @@
           
           
             <div class="item shadow mb-4" data-category="gratis">
-              <img class="item-image" src="../img/img-productos/image 387.jpg" />
+                <a href="paginas-productos/contenedor.html">
+                    <img class="item-image" src="../img/img-productos/container.jpg" />
+                </a>
               <h3 class="item-title">CONTENEDOR</h3>
 
               <div class="item-details">
@@ -261,8 +310,10 @@
               </div>
             </div>
         
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 388.jpg" />
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/casaCampo.html">
+                    <img class="item-image" src="../img/img-productos/casa-campo.jpg" />
+                </a>
               <h3 class="item-title"> CASA EN EL CAMPO</h3>
 
               <div class="item-details">
@@ -282,7 +333,9 @@
        
        
             <div class="item shadow mb-4" data-category="gratis">
-              <img class="item-image" src="../img/img-productos/image 410.jpg" />
+                <a href="paginas-productos/arbolOtoño.html">
+                    <img class="item-image" src="../img/img-productos/otoño.jpg" />
+                </a>
               <h3 class="item-title">ÁRBOL DE OTOÑO</h3>
 
               <div class="item-details">
@@ -302,8 +355,10 @@
       
 
        
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 390.jpg" />
+            <div class="item shadow mb-4" data-category="mockups">
+                <a href="paginas-productos/packaging.html">
+                    <img class="item-image" src="../img/img-productos/packaging.jpg" />
+                </a>
               <h3 class="item-title">PACKAGING</h3>
 
               <div class="item-details">
@@ -322,8 +377,10 @@
             </div>
          
        
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 391.jpg" />
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/volcan.html">
+                 <img class="item-image" src="../img/img-productos/volcan.jpg" />
+                </a>
               <h3 class="item-title">VOLCÁN</h3>
 
               <div class="item-details">
@@ -343,7 +400,9 @@
         
         
             <div class="item shadow mb-4" data-category="descuentos">
-              <img class="item-image" src="../img/img-productos/image 392.jpg" />
+                <a href="paginas-productos/personajeTraje.html">
+                    <img class="item-image" src="../img/img-productos/persona-traje.jpg" />
+                </a>
               <h3 class="item-title">PERSONAJE DE TRAJE</h3>
 
               <div class="item-details">
@@ -363,7 +422,9 @@
      
          
             <div class="item shadow mb-4" data-category="descuentos">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+                <a href="paginas-productos/pollito.html">
+                    <img class="item-image" src="../img/img-productos/pollito.jpg" />
+                </a>
               <h3 class="item-title">POLLITO REVELDE</h3>
 
               <div class="item-details">
@@ -383,7 +444,9 @@
        
        
             <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+                <a href="paginas-productos/personaje.html">
+                    <img class="item-image" src="../img/img-productos/personaje.jpg" />
+                </a>
               <h3 class="item-title">PERSONAJE</h3>
 
               <div class="item-details">
@@ -403,7 +466,9 @@
         
         
             <div class="item shadow mb-4" data-category="mockups">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+                <a href="paginas-productos/lata.html">
+                    <img class="item-image" src="../img/img-productos/lata.jpg" />
+                </a>
               <h3 class="item-title">LATA DE SODA</h3>
 
               <div class="item-details">
@@ -422,8 +487,10 @@
             </div>
        
         
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/cuartoGamer.html">
+                    <img class="item-image" src="../img/img-productos/cuarto-gamer.jpg" />
+                </a>
               <h3 class="item-title">CUARTO GAMER</h3>
 
               <div class="item-details">
@@ -442,8 +509,10 @@
             </div>
        
        
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/guerrero.html">
+                    <img class="item-image" src="../img/img-productos/guerrero.jpg" />
+                </a>
               <h3 class="item-title">GUERRERO</h3>
 
               <div class="item-details">
@@ -463,7 +532,9 @@
 
       
             <div class="item shadow mb-4" data-category="mockups">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+                <a href="paginas-productos/mockup.html">
+                    <img class="item-image" src="../img/img-productos/mockup.jpg" />
+                </a>
               <h3 class="item-title">MOCKUP</h3>
 
               <div class="item-details">
@@ -482,7 +553,9 @@
             </div>
 
             <div class="item shadow mb-4" data-category="descuentos">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+                <a href="paginas-productos/lagarto.html">
+                    <img class="item-image" src="../img/img-productos/lagarto.jpg" />
+                </a>
               <h3 class="item-title">LAGARTO DEL PANTANO</h3>
 
               <div class="item-details">
@@ -499,8 +572,12 @@
                 </div>
               </div>
             </div>
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+
+
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/calavera.html">
+                    <img class="item-image" src="../img/img-productos/calavera.jpg" />
+                </a>
               <h3 class="item-title">ISLA CALAVERA</h3>
 
               <div class="item-details">
@@ -519,7 +596,9 @@
             </div>
 
             <div class="item shadow mb-4" data-category="descuentos">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
+                <a href="paginas-productos/house.html">
+                    <img class="item-image" src="../img/img-productos/16.house/house-1.png" />
+                </a>
               <h3 class="item-title">HOUSE</h3>
 
               <div class="item-details">
@@ -542,82 +621,7 @@
 
 
 
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
-              <h3 class="item-title">PERSONAJE</h3>
-
-              <div class="item-details">
-                <h4 class="item-price">1.00€</h4>
-                <button class="item-button btn btn-primary addToCart">
-                  AÑADIR AL CARRITO
-                </button>
-                <div class="estrella">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
-              <h3 class="item-title">PERSONAJE</h3>
-
-              <div class="item-details">
-                <h4 class="item-price">1.00€</h4>
-                <button class="item-button btn btn-primary addToCart">
-                  AÑADIR AL CARRITO
-                </button>
-                <div class="estrella">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
-              <h3 class="item-title">PERSONAJE</h3>
-
-              <div class="item-details">
-                <h4 class="item-price">1.00€</h4>
-                <button class="item-button btn btn-primary addToCart">
-                  AÑADIR AL CARRITO
-                </button>
-                <div class="estrella">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="item shadow mb-4" data-category="otros">
-              <img class="item-image" src="../img/img-productos/image 393.jpg" />
-              <h3 class="item-title">PERSONAJE</h3>
-
-              <div class="item-details">
-                <h4 class="item-price">1.00€</h4>
-                <button class="item-button btn btn-primary addToCart">
-                  AÑADIR AL CARRITO
-                </button>
-                <div class="estrella">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </div>
-              </div>
-            </div>
-
+          
             
         
 
@@ -852,5 +856,6 @@
 
     <script src="../js/menu.js"></script>
     <script src="../js/tienda.js"></script>
+    <script src="../js/iniciar-sesion.js"></script>
   </body>
 </html>

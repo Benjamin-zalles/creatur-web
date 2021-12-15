@@ -11,12 +11,61 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-  
+    <link rel="stylesheet" href="css/iniciar-sesion.css">
+    <script src="https://kit.fontawesome.com/b1a91cbac7.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css"
+  />
 
 
   </head>
 
   <body>
+
+    <!-- INICIO DE SESIÓN -->
+
+    <div class="padre" id="padre">
+        <div class="login-container" id="overlay">
+           
+            <div class="login-info-container" id="popup">
+                <h1 class="title"> iniciar sesión</h1>
+                
+                <div class="social-login">
+                    
+                    <div class="social-login-element">
+                        <img src="img-login/google.svg" alt="google-jpg">
+                        <spam>google</spam>
+                    </div>
+                    
+                    <div class="social-login-element">
+                        <img src="img-login/facebook.svg" alt="facebook-jpg">
+                        <spam>facebook</spam>
+                    </div>
+                
+                </div>
+              
+                
+                <form class="inputs-container">
+                    <input class= "input" type="text" placeholder="Username">
+                    <input class= "input" type="password" placeholder="Password">
+                    <p>¿Olvidó su contraseña? <span class="span"> clip aquí</span></p>
+                    <button class="btn-s">iniciar sesión</button>
+                    <p>¿No tienes una cuenta? <span class="span">registrarse</span></p>
+                </form>
+                
+            </div>
+            <div class="popup-img" id="popup-img">
+                <img class="image-container" src="img-login/casa2.jpg" alt="login">
+                <a href="#" class="btn-cerrar-popup" id="btn-cerrar-popup">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACABA INICIO DE SESIÓN -->
+    
     <header>
       <div class="icon__menu" id="btn-open">
         <i class="bx bx-menu"></i>
@@ -43,7 +92,7 @@
           <i class="bx bxl-facebook-circle"></i>
         </a>
 
-        <a href="#">Iniciar Sesión</a>
+        <a href="#" id="user-icon-open">Iniciar Sesión</a>
         <a href="#">Registrarse</a>
       </div>
     </header>
@@ -132,15 +181,13 @@
         <a href="html/productos.html">Ver más > </a>
 
         <div class="img-1">
-          <img src="img/img-productos/image 410.jpg" alt="Bosque" />
+          <img src="img/img-productos/14.lagarto/lagartov (1).png" alt="Bosque" />
         </div>
         <div class="img-2">
-          <img src="img/img-productos/image 388.jpg" alt="Bosque" />
+          <img src="img/img-productos/3.casa-en-el campo/casa-campo-2.png" alt="Bosque" />
         </div>
 
-        <!-- <div class="arrow">
-          <img src="img/svg/arrow.svg" alt="" />
-        </div> -->
+    
       </div>
 
       <div class="frase">
@@ -151,13 +198,16 @@
       <hr />
 
       <div class="conoce">
-        <h2>
-          Conoce sobre, nuestros desarrollos para la <span>web</span> y diseños
-          para el ambito de <span>videojuegos</span>, <span>animación</span>,
-          etc.
-        </h2>
-        <div>
-          <img src="img/svg/web.svg" alt="" />
+          <div class="conoce-letras">
+              <h2>
+                  Conoce sobre, nuestros desarrollos para la <span>web</span> y diseños
+                  para el ambito de <span>videojuegos</span>, <span>animación</span>,
+                  etc.
+             </h2>
+            </div>
+        <div class="imagen-doble" id="imagen-doble">
+          <img src="img/img-inicio/robot.jpg" />
+          <img src="img/img-inicio/robot2.jpg" />
         </div>
       </div>
 
@@ -340,8 +390,15 @@
 
     
 
-    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"></script>
+
+    <script src="js/imagen-doble.js"></script>
+
+    <script src="js/iniciar-sesion.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>
