@@ -55,7 +55,7 @@ hr {
 h2{
   position: relative;
   font-size: 14vw;
-  color: #252839;
+  color: var(--fondo-oscuro);
   /* -webkit-text-stroke: 0.3vw #389d52; */
   -webkit-text-stroke: 0.3vw #383d52;
   -webkit-text-stroke: 0.3vw;
@@ -70,7 +70,7 @@ h2::before{
   width: 0%;
   height: 100%;
   color: var(--btn-rosado);
-  -webkit-text-stroke: 0vw #383d52;
+  -webkit-text-stroke: 0vw var(--fondo-oscuro);
   border-right: 2px solid #eaebea;
   overflow: hidden;
   animation: animate 2.5s linear infinite;
@@ -84,6 +84,7 @@ h2::before{
   
   }
 }
+
 
 
 
