@@ -11,12 +11,16 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- incono del encabezado -->
+    <link rel="icon" type="imagen/jpg" href="../img/logo-creatur.svg" />
+    <!-- cierre encabezado -->
     <script
       src="https://kit.fontawesome.com/b1a91cbac7.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/b1a91cbac7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/iniciar-sesion.css">
+    <link rel="stylesheet" href="../css/ayuda.css">
 
     
   </head>
@@ -100,7 +104,7 @@
 
     <div class="menu__side" id="menu_side">
       <div class="logo-creatur">
-        <a href="#">
+        <a href="../index.html">
           <div class="option">
             <img src="../img/logo-creatur.svg" alt="" />
             <h4 class="creatur">Creatur</h4>
@@ -148,7 +152,7 @@
         </a>
 
         <a href="#">
-          <div class="option ayuda">
+          <div class="option ayuda" id="abrir-ayuda">
             <i class="bx bx-help-circle"></i>
           </div>
         </a>
@@ -156,6 +160,32 @@
     </div>
 
     <!-- Fin de side menu -->
+
+    <!-- INICIO BOT DE AYUDA -->
+
+    <div class="ayuda2" id="ayuda2">
+
+        <div class="header-ayuda">
+            <h3>CREATUR</h3>
+            <a href="#" class="cerrar-ayuda" id="cerrar-ayuda">
+                <i class='bx bx-x'></i>
+            </a>
+        </div>
+
+        <div class="comentarios-ayuda">
+            <h5>Creatur Bot.</h5>
+            <p class="cm-1">Hola, bienvenido a Creatur</p>
+            <p class="cm-2">En estos momentos nuestro Bot no esta en función.</p>
+            <p class="cm-3">Muy pronto estara disponible. 🙋‍♂️</p>
+        </div>
+
+        <div class="comentario-ayuda">
+            <input type="text" placeholder="Escriba su pregunta aquí">
+        </div>
+
+    </div>
+
+    <!-- FIN BOT DE AYUDA -->
 
     <div class="titleh1">
       <h2>Nuestros Servicios</h2>
@@ -207,10 +237,62 @@
       </div>
     </div>
 
-    <footer class="footer">creatur</footer>
+
+
+
+
+
+     <!-- FOOTER INICIO -->
+     <div class="footer">
+    
+      
+    
+      <div class="col">
+        <h1 class="copy">©Creatur 2021 </h1>
+      </div>
+
+      <div class="col">
+        <h1>SECCIÓNES</h1>
+        <ul>
+          <li>Descargas gratis</li>
+          <li>Low poly</li>
+          <li>voxel art</li>
+          <li>Diseño 3d</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1>INFORMACIÓN</h1>
+        <ul>
+          <li>Términos de servicio</li>
+          <li>Política de privacidad</li>
+          <li>Promociones</li>
+          <li>Ayuda</li>
+        </ul>
+      </div>
+
+      <div class="col social">
+        
+        <ul>
+          <li>
+            <i class='bx bxl-facebook-circle'></i>
+          </li>
+          <li>
+            <i class='bx bxl-instagram-alt' ></i>
+          </li>
+          <li>
+            <i class='bx bxl-github'></i>
+          </li>
+        </ul>
+      </div>
+    <!-- <div class="clearfix"></div> -->
+    
+    </div>
+    <!-- FIN OF FOOTER -->
 
     <script src="../js/menu.js"></script>
     <script src="../js/iniciar-sesion.js"></script>
+    <script src="../js/ayuda.js"></script>
 
   </body>
 </html>

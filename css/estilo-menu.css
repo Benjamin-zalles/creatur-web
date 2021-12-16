@@ -63,7 +63,8 @@ header {
     top: 0px;
     display: flex;
     justify-content: flex-end;
-    z-index: 200;
+    z-index: 300;
+    /* position: fixed; */
 }
 
 .menu-header {
@@ -94,6 +95,26 @@ header {
       color: var(--icon-blanco);
       font-size: 22px;
   }
+
+.menu-header .carrito::before{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #d82753;
+    position: relative;
+    left: 28px;
+    bottom: 13px;
+}
+
+.boton-modal i{
+    font-size: 22px;
+    margin-right: 10px;
+}
+
 
   .menu-header .carrito {
     border: none;
@@ -217,6 +238,11 @@ header {
   .option__menu .ayuda {
     margin-top: 200px;
 }
+
+.option__menu .ayuda:hover {
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 760px) {
         

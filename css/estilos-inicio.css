@@ -309,6 +309,7 @@ hr {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   grid-auto-flow: dense;
+  margin-bottom: 170px;
 }
 
 [class^="card"] {
